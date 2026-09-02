@@ -374,5 +374,16 @@ Revenue generated from delivered orders.
 
 ```text
 AOV = Total Revenue / Total Orders
+```
+```text
 Revenue per Customer = Total Revenue / Total Customers
+```
+```text
 Repeat Customer Rate = Repeat Customers / Total Customers
+```
+```text
+On-Time Delivery % = On-Time Orders / Total Orders
+```
+```text
+Late Delivery % = Late Orders / Total Orders
+```
