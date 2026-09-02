@@ -374,3 +374,5 @@ Revenue generated from delivered orders.
 
 ```text
 AOV = Total Revenue / Total Orders
+Revenue per Customer = Total Revenue / Total Customers
+Repeat Customer Rate = Repeat Customers / Total Customers
