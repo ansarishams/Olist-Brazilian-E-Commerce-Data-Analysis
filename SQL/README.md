@@ -6,11 +6,10 @@ Recommended structure:
 
 ```text
 sql/
-├── 01_data_validation.sql
-├── 02_sales_analysis.sql
-├── 03_customer_rfm.sql
-├── 04_delivery_analysis.sql
-└── 05_powerbi_views.sql
+├── 01_Analytical_insights.sql
+├── 02_ecommerce_solution.sql
+├── 03_marketing_solution.sql
+├── 04_table_schema.sql
 ```
 
 ## SQL work covered
