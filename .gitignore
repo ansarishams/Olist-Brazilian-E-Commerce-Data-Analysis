@@ -1,0 +1,30 @@
+# Power BI
+*.pbix
+*.pbit
+
+# Data files
+*.csv
+*.xlsx
+*.xls
+*.parquet
+
+# Credentials
+.env
+*.pem
+*.key
+*.pgpass
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Logs
+*.log
