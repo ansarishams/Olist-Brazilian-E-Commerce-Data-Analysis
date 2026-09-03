@@ -269,6 +269,53 @@ This table helps make product category names easier to understand during analysi
 
 ---
 
+# 📂 Marketing Funnel Dataset Documentation
+
+## Olist Marketing Funnel
+
+This project uses the **Olist Marketing Funnel Dataset**, which contains information about marketing qualified leads and closed deals from Olist.
+
+The dataset was used to understand the marketing and sales funnel, analyze lead sources, study lead characteristics, and identify which leads successfully converted into sellers.
+
+The dataset contains two main files:
+
+- `olist_marketing_qualified_leads_dataset.csv`
+- `olist_closed_deals_dataset.csv`
+
+---
+
+# 🔗 Dataset Source
+
+**Dataset:** Marketing Funnel by Olist  
+**Platform:** Kaggle  
+**Source:** [Kaggle](https://www.kaggle.com/datasets/olistbr/marketing-funnel-olist)
+
+The original dataset was publicly released by Olist and is available on Kaggle.
+
+---
+
+# 📊 Dataset Overview
+
+The Marketing Funnel dataset contains information about **8,000 Marketing Qualified Leads (MQLs)** collected between June 1, 2017 and June 1, 2018.
+
+The dataset represents the marketing and sales process through which potential sellers show interest in joining Olist.
+
+The basic process is:
+
+```text
+Landing Page / Lead
+        ↓
+Marketing Qualified Lead (MQL)
+        ↓
+Sales Development Representative (SDR)
+        ↓
+Sales Representative (SR)
+        ↓
+Closed Deal
+        ↓
+Seller
+```
+
 # 🔗 Main Table Relationships
 
 The major relationships between the tables are:
