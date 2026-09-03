@@ -395,3 +395,77 @@ On-Time Delivery % = On-Time Orders / Total Orders
 ```text
 Late Delivery % = Late Orders / Total Orders
 ```
+
+# 📁 Project Structure
+
+```text
+Olist-Brazilian-E-Commerce-Data-Analysis/
+│
+├── Dataset/
+│   ├── olist_geolocation_dataset
+│   |        ├──olist_geolocation_dataset_01.xlsx
+|   |        └──olist_geolocation_dataset_02.xlsx
+|   |        └──olist_geolocation_dataset_03.xlsx
+|   |
+|   ├──olist_closed_deals_dataset.csv
+|   └──olist_customers_dataset.csv
+|   └──olist_marketing_qualified_leads_dataset.csv
+|   └──olist_order_items_dataset.csv
+|   └──olist_order_payments_dataset.csv
+|   └──olist_orders_dataset.csv
+|   └──olist_products_dataset.csv
+|   └──olist_sellers_dataset.csv
+|   └──order_reviews_dataset.csv
+|   └──product_category_name_translation.csv
+|
+|
+├──Docs/
+|   ├──dashboard-guide.md
+|   └──dax-reference.md
+|   └──key-insights.md
+|   └──project-metadata.md
+|   └──project-story.md
+|
+|
+├── SQL/
+│   ├── Analytical_insights.sql
+│   └── README.md
+│   └── ecommerce_solution.sql
+|   └── marketing_solution.sql
+|   └── table_schema.sql
+|
+|
+├── PowerBI/
+│   └── Olist_Ecommerce_Dashboard.pbit
+│   └──README.md
+|
+|
+├── Assets/
+│   ├── Overview.png
+|   └── Sales.png
+|   └── Customer & RFM.png
+│   └── Delivery & logistics.png
+│   └── Key Insights.png
+│
+|
+└── .gitignore
+└── LICENSE
+└── README.md
+```
+
+## 🙋‍♂️ Author
+
+
+I am **SHAMSUL HODA** an aspiring **Data Analyst** focused on building practical skills in **SQL, Power BI, Excel and Data Analysis**.
+
+I enjoy working with real-world business problems, analyzing data to find meaningful patterns, and turning those findings into clear dashboards and actionable business insights.
+
+This project is part of my **Data Analyst portfolio**, where I am applying my SQL and Power BI skills to solve business problems and present data in a simple, decision-oriented way.
+
+### 🔗 Connect With Me
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Shamsul%20Hoda-blue?logo=linkedin&logoColor=black)](https://www.linkedin.com/in/shamsul-hoda-s4632/)
+
+[![GitHub](https://img.shields.io/badge/GitHub-AnsariShams-red?logo=github&logoColor=black)](https://github.com/ansarishams)
+
+Feel free to ⭐ this repo if you found it useful!
