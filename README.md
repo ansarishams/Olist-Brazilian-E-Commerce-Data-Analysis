@@ -31,6 +31,269 @@ This project answers these questions using SQL and Power BI.
 
 ---
 
+# 📂 Dataset Documentation
+
+## Brazilian E-Commerce Public Dataset by Olist
+
+This project uses the **Brazilian E-Commerce Public Dataset by Olist**, a real-world e-commerce dataset containing information about orders, customers, products, sellers, payments, reviews and delivery.
+
+The dataset was used to analyze sales performance, customer behavior, customer retention, RFM segments, delivery performance and geographic trends.
+
+---
+
+## 🔗 Dataset Source
+
+**Dataset:** Brazilian E-Commerce Public Dataset by Olist  
+**Platform:** Kaggle  
+**Source:** [Kaggle Dataset](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
+
+The original dataset is publicly available on Kaggle.
+
+---
+
+# 📊 Dataset Overview
+
+The dataset contains multiple related tables. Each table provides a different part of the e-commerce business process.
+
+The main tables used in the analysis are:
+
+1. Customers
+2. Orders
+3. Order Items
+4. Products
+5. Sellers
+6. Payments
+7. Reviews
+8. Geolocation
+9. Product Category Translation
+
+These tables were connected using their respective IDs and relationships before creating the analytical dataset used in Power BI.
+
+---
+
+# 🗂️ Dataset Tables & Columns
+
+## 1. Customers
+
+**Table:** `olist_customers_dataset.csv`
+
+This table contains information about customers and their locations.
+
+| Column | Description |
+|---|---|
+| `customer_id` | Unique identifier for each customer order record |
+| `customer_unique_id` | Unique identifier for the actual customer |
+| `customer_zip_code_prefix` | First five digits of the customer's ZIP code |
+| `customer_city` | Customer's city |
+| `customer_state` | Customer's state |
+
+### Important Columns
+
+`customer_unique_id` is especially important for customer analysis because the same customer can have multiple orders.
+
+---
+
+# 2. Orders
+
+**Table:** `olist_orders_dataset.csv`
+
+This table contains information about orders and their different stages.
+
+| Column | Description |
+|---|---|
+| `order_id` | Unique identifier for each order |
+| `customer_id` | Customer identifier |
+| `order_status` | Current status of the order |
+| `order_purchase_timestamp` | Date and time when the order was placed |
+| `order_approved_at` | Date and time when the payment was approved |
+| `order_delivered_carrier_date` | Date when the order was handed to the carrier |
+| `order_delivered_customer_date` | Date when the order was delivered to the customer |
+| `order_estimated_delivery_date` | Estimated delivery date |
+
+### Important Columns
+
+The order date and delivery date fields were important for:
+
+- Revenue trends
+- Monthly analysis
+- Delivery time calculation
+- Late delivery analysis
+
+---
+
+# 3. Order Items
+
+**Table:** `olist_order_items_dataset.csv`
+
+This table contains information about products included in each order.
+
+| Column | Description |
+|---|---|
+| `order_id` | Order identifier |
+| `order_item_id` | Sequential number identifying items within an order |
+| `product_id` | Product identifier |
+| `seller_id` | Seller identifier |
+| `shipping_limit_date` | Seller shipping deadline |
+| `price` | Price of the product |
+| `freight_value` | Freight/shipping cost |
+
+### Important Columns
+
+The `price` and `freight_value` columns were used to analyze:
+
+- Product revenue
+- Order value
+- Freight cost
+- Category performance
+
+---
+
+# 4. Products
+
+**Table:** `olist_products_dataset.csv`
+
+This table contains product-level information.
+
+| Column | Description |
+|---|---|
+| `product_id` | Unique product identifier |
+| `product_category_name` | Product category |
+| `product_name_lenght` | Length of product name |
+| `product_description_lenght` | Length of product description |
+| `product_photos_qty` | Number of product photos |
+| `product_weight_g` | Product weight in grams |
+| `product_length_cm` | Product length in centimeters |
+| `product_height_cm` | Product height in centimeters |
+| `product_width_cm` | Product width in centimeters |
+
+### Important Columns
+
+`product_category_name` was mainly used to analyze revenue by product category.
+
+---
+
+# 5. Sellers
+
+**Table:** `olist_sellers_dataset.csv`
+
+This table contains seller information.
+
+| Column | Description |
+|---|---|
+| `seller_id` | Unique seller identifier |
+| `seller_zip_code_prefix` | First five digits of seller ZIP code |
+| `seller_city` | Seller's city |
+| `seller_state` | Seller's state |
+
+Seller information can be used to understand seller distribution and geographic performance.
+
+---
+
+# 6. Payments
+
+**Table:** `olist_order_payments_dataset.csv`
+
+This table contains payment information for orders.
+
+| Column | Description |
+|---|---|
+| `order_id` | Order identifier |
+| `payment_sequential` | Sequence number of payment |
+| `payment_type` | Payment method |
+| `payment_installments` | Number of installments |
+| `payment_value` | Payment amount |
+
+### Important Columns
+
+`payment_type` was used to understand customer payment preferences.
+
+Examples include:
+
+- Credit Card
+- Boleto
+- Voucher
+- Debit Card
+
+---
+
+# 7. Reviews
+
+**Table:** `olist_order_reviews_dataset.csv`
+
+This table contains customer review information.
+
+| Column | Description |
+|---|---|
+| `review_id` | Unique review identifier |
+| `order_id` | Order identifier |
+| `review_score` | Customer review score |
+| `review_comment_title` | Review title |
+| `review_comment_message` | Review message |
+| `review_creation_date` | Date when the review was created |
+| `review_answer_timestamp` | Date when the review was answered |
+
+The review table can be used to analyze customer satisfaction and review behavior.
+
+---
+
+# 8. Geolocation
+
+**Table:** `olist_geolocation_dataset.csv`
+
+This table contains geographic information associated with ZIP code prefixes.
+
+| Column | Description |
+|---|---|
+| `geolocation_zip_code_prefix` | ZIP code prefix |
+| `geolocation_lat` | Latitude |
+| `geolocation_lng` | Longitude |
+| `geolocation_city` | City |
+| `geolocation_state` | State |
+
+This table can be used for geographic and location-based analysis.
+
+---
+
+# 9. Product Category Translation
+
+**Table:** `product_category_name_translation.csv`
+
+This table provides English translations for Portuguese product category names.
+
+| Column | Description |
+|---|---|
+| `product_category_name` | Original Portuguese category name |
+| `product_category_name_english` | English category name |
+
+This table helps make product category names easier to understand during analysis and visualization.
+
+---
+
+# 🔗 Main Table Relationships
+
+The major relationships between the tables are:
+
+```text
+Customers
+    │
+    │ customer_id
+    ↓
+Orders
+    │
+    ├──────────────→ Order Payments
+    │
+    ├──────────────→ Order Reviews
+    │
+    │ order_id
+    ↓
+Order Items
+    │
+    ├──────────────→ Products
+    │
+    └──────────────→ Sellers
+```
+---
+
 ## 🛠️ Tools & Technologies
 
 - **SQL**
